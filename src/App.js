@@ -1,13 +1,19 @@
-import Example from "./example";
+import Container from "./Container";
 import { DndProvider } from "react-dnd";
-import { HTML5Backend } from "react-dnd-html5-backend";
+import { TouchBackend } from "react-dnd-touch-backend";
+import CustomDragLayer from "./CustomDragLayer";
+
 import "./App.css";
 
 function App() {
     return (
         <div className="App">
-            <DndProvider backend={HTML5Backend}>
-                <Example />
+            <DndProvider
+                backend={TouchBackend}
+                options={{ enableMouseEvents: true }}
+            >
+                <Container />
+                <CustomDragLayer />
             </DndProvider>
         </div>
     );

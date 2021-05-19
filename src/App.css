@@ -5,3 +5,6 @@ body {
 .container {
     display: flex;
 }
+body.dragging {
+    cursor: grabbing;
+}

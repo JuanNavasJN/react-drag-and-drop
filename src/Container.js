@@ -1,6 +1,6 @@
 import { Project } from "./Project";
 import { Box } from "./Box";
-export const Container = () => (
+const Container = () => (
     <div className="container">
         <div
             style={{ overflow: "hidden", clear: "both" }}
@@ -22,3 +22,5 @@ export const Container = () => (
         </div>
     </div>
 );
+
+export default Container;
